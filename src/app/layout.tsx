@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={font.className}>
         <Header />
         <Suspense fallback={<Loading />}>
-          <section className="min-h-screen bg-base-bg">{children}</section>
+          <section className="bg-base-bg">{children}</section>
         </Suspense>
       </body>
     </html>

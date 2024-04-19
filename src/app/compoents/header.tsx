@@ -20,7 +20,7 @@ export const Header = (props: HeaderProps) => {
 
   return (
     <>
-      <div className="flex h-20 px-8 items-center justify-between">
+      <div className="flex h-16 px-8 items-center justify-between">
         <div className="flex gap-4 items-center ">
           <Image src="/logo_pl_w.png" alt="my logo" width={32} height={32} />
           <div>Pavlo Lystopad</div>
