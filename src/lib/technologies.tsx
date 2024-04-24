@@ -1,0 +1,16 @@
+export const technologies = [
+  { image: "./skills/html.svg", text: "HTML5" },
+  { image: "./skills/css.svg", text: "CSS3" },
+  { image: "./skills/js.svg", text: "Javascript" },
+  { image: "./skills/react.svg", text: "React" },
+  { image: "./skills/tailwind.svg", text: "TailwindCSS" },
+  { image: "./skills/typescript.svg", text: "Typescript" },
+  { image: "./skills/next.svg", text: "Next.js" },
+  { image: "./skills/node.svg", text: "Node.js" },
+  { image: "./skills/mongodb.svg", text: "MongoDB" },
+  { image: "./skills/express.svg", text: "Express.js" },
+  { image: "./skills/postman.svg", text: "Postman" },
+  { image: "./skills/figma.svg", text: "Figma" },
+  { image: "./skills/sass.svg", text: "SASS" },
+  { image: "./skills/docker.svg", text: "Docker" },
+];

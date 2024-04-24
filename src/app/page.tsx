@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React from "react";
-import Button from "./compoents/button";
-import SocialButton from "./compoents/socialButton";
+import Button from "./components/button";
+import SocialButton from "./components/socialButton";
 import Link from "next/link";
 
 type HomeProps = {};
@@ -16,12 +16,38 @@ export default function Home({}: HomeProps) {
             Hi, I am
           </span>
           <h1 className="text-7xl tracking-tighter">Pavlo Lystopad</h1>
-          <p className="my-10 text-base font-semibold text-dark-bg">
+          <p className="mt-10 mb-5 text-base font-semibold text-dark-bg">
             A Kyiv based Full-Stack developer passionate about building
             accessible and user friendly websites.
           </p>
+          <div className="mb-5">
+            <Link
+              className="flex gap-1 items-center"
+              href={"https://maps.app.goo.gl/hxBt8hcqaV8noxheA"}
+            >
+              <Image
+                src="/map.svg"
+                alt="location"
+                width="0"
+                height="0"
+                sizes="100vw"
+                className="w-5 h-5"
+              />
+              <span>Brovary Kyiv area, Ukraine</span>
+              <Image
+                src="/lang/ua_flag.svg"
+                alt="ukraine flag"
+                width="0"
+                height="0"
+                sizes="100vw"
+                className="w-5 h-4"
+              />
+            </Link>
+          </div>
           <div className="flex gap-4">
-            <Button>Contact Me</Button>
+            <Button>
+              <Link href={"/contacts"}>Contact Me</Link>
+            </Button>
             <SocialButton>
               <Image src="/link.svg" alt="linkedIn" width={20} height={20} />
             </SocialButton>

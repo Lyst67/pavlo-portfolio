@@ -14,7 +14,9 @@ const config: Config = {
         "dark-bg": "#222222",
         "gray-bg": "#c4c4c4",
         "gray-txt": "#909090",
-        "salad": "#D3E97A"
+        "salad": "#D3E97A",
+        "error": "#ff6a00",
+        "success": "#a8df71",
 
       },
     },
