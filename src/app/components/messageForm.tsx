@@ -60,9 +60,6 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
 
   return (
     <>
-      <button onClick={() => toast.success("Your message has been sent")}>
-        Give me a toast
-      </button>
       <Formik
         onSubmit={sendEmail}
         initialValues={initialValues}

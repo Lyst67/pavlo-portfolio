@@ -17,8 +17,15 @@ const config: Config = {
         "salad": "#D3E97A",
         "error": "#ff6a00",
         "success": "#a8df71",
+        "info": "#00bdbd"
 
       },
+    },
+      screens: {
+      sm: "375px",
+      md: "768px",
+      lg: "1060px",
+      xl: "1280px",
     },
   },
   plugins: [],

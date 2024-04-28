@@ -4,6 +4,8 @@ import SocialButton from "../components/socialButton";
 import Image from "next/image";
 import { technologies } from "@/lib/technologies";
 import { flags } from "@/lib/flags";
+import Link from "next/link";
+import ContactMeButtons from "../components/contactMeButtons";
 
 type AboutProps = {};
 
@@ -35,15 +37,7 @@ export default function About({}: AboutProps) {
             disabilities. But my biggest passion is traveling. Learning more for
             improving skills.
           </p>
-          <div className="flex gap-4">
-            <Button>Download Resume</Button>
-            <SocialButton>
-              <Image src="/link.svg" alt="linkedIn" width={20} height={20} />
-            </SocialButton>
-            <SocialButton>
-              <Image src="/gith.svg" alt="gitHub" width={20} height={20} />
-            </SocialButton>
-          </div>
+          <ContactMeButtons />
         </div>
       </div>
       <div className="flex mx-20 my-10">

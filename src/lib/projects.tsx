@@ -1,6 +1,6 @@
 export const projects = [
   {
-    image: "/images/crm.png",
+    image: "/images/crm.webp",
     name: "CRM for vendors",
     description:
       "An example of the application that helps in optimizing the management of information about suppliers.",
@@ -12,7 +12,7 @@ export const projects = [
     github: "https://github.com/Lyst67/crm-for-vendors",
   },
   {
-    image: "/images/gym.png",
+    image: "/images/gym.webp",
     name: "Space Gym",
     description:
       "A responsive React website presenting Fitness Classes with pleasant animations.",
@@ -25,7 +25,7 @@ export const projects = [
     github: "https://github.com/Lyst67/gym-react-ts",
   },
   {
-    image: "/images/daily-energy.png",
+    image: "/images/daily-energy.webp",
     name: "Daily Energy Dose",
     description:
       "An eight-page application with adaptive design for counting calories burned during training and calories consumed with food.",
@@ -38,7 +38,7 @@ export const projects = [
     github: "https://github.com/Sokilskill/project-daily-energy-dose",
   },
   {
-    image: "/images/movies.png",
+    image: "/images/movies.webp",
     name: "Best Movies",
     description:
       "Introducing a convenient application on three pages that will help you find and get information about the most popular movies of the week.",
