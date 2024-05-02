@@ -22,11 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
+        <Header />
         <Suspense fallback={<Loader />}>
-          <Header />
           <section className="bg-base-bg">{children}</section>
-          <Footer />
         </Suspense>
+        <Footer />
       </body>
     </html>
   );

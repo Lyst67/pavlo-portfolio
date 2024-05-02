@@ -1,7 +1,7 @@
 "use client";
 
 import WorkList from "@/app/components/workList";
-import { otherProjects } from "@/lib/otherProjects";
+import { otherProjects } from "@/lib/projects";
 import Image from "next/image";
 import React from "react";
 

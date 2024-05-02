@@ -12,11 +12,11 @@ type NavItemProps = {
 
 export const NavItem = ({ link, isActive, closeMenu }: NavItemProps) => {
   return (
-    <li className="text-lg hover:scale-110 duration-300">
+    <li className="hover:scale-110 focus:scale-110 duration-300">
       <Link
         onClick={closeMenu}
         href={link.href}
-        className={isActive ? "text-salad" : "text-inherit"}
+        className={isActive ? "text-salad underline" : "text-inherit"}
       >
         {link.name}
       </Link>

@@ -41,9 +41,13 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
       message: values.message,
     };
 
+    const SERVICE_ID = process.env.NEXT_PUBLIC_MY_SERVICE_ID;
+    const TEMPLATE_ID = process.env.NEXT_PUBLIC_MY_TEMPLATE_ID;
+    const PUBLIC_KEY = process.env.NEXT_PUBLIC_MY_PUBLIC_KEY;
+
     await emailjs
-      .send("service_lnhlcd8", "template_xujsweb", templateParams, {
-        publicKey: "0Rtxye263q6uPXrSa",
+      .send(`${SERVICE_ID}`, `${TEMPLATE_ID}`, templateParams, {
+        publicKey: `${PUBLIC_KEY}`,
       })
       .then(
         (response) => {
@@ -64,19 +68,18 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
         onSubmit={sendEmail}
         initialValues={initialValues}
         validationSchema={MessageSchema}
-        // onSubmit={(values) => {
-        //   // same shape as initial values
-        //   console.log(values);
-        // }}
       >
         {({ errors, touched, values }) => (
-          <Form className="w-4/5 mx-auto space-y-6">
+          <Form className="w-full sm:max-w-96 lg:max-w-none lg:w-4/5 2xl:w-2/3 mx-auto space-y-6 lg:space-y-8 2xl:space-y-10">
             <div className="grid">
-              <label className="font-extralight" htmlFor="email">
+              <label
+                className="text-sm md:text-base font-extralight"
+                htmlFor="email"
+              >
                 Name
               </label>
               <Field
-                className="bg-dark-bg px-4 py-2 rounded-md"
+                className="text-sm md:text-base bg-dark-bg px-4 py-2 rounded-md"
                 name="name"
                 placeholder="Enter Your Name"
               />
@@ -87,11 +90,14 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
               ) : null}
             </div>
             <div className="grid">
-              <label className="font-extralight" htmlFor="email">
+              <label
+                className="text-sm md:text-base font-extralight"
+                htmlFor="email"
+              >
                 Email
               </label>
               <Field
-                className="bg-dark-bg px-4 py-2 rounded-md"
+                className="text-sm md:text-base bg-dark-bg px-4 py-2 rounded-md"
                 name="email"
                 type="email"
                 placeholder="Enter Your Email"
@@ -103,11 +109,14 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
               ) : null}
             </div>
             <div className="grid">
-              <label className="font-extralight" htmlFor="email">
+              <label
+                className="text-sm md:text-base font-extralight"
+                htmlFor="email"
+              >
                 Message
               </label>
               <Field
-                className="bg-dark-bg px-4 py-2 rounded-md"
+                className="text-sm md:text-base bg-dark-bg px-4 py-2 rounded-md"
                 rows="5"
                 as="textarea"
                 name="message"
@@ -120,7 +129,6 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
                 <div className="text-xs mt-1 text-success">Success</div>
               ) : null}
             </div>
-
             <Button>Submit</Button>
           </Form>
         )}

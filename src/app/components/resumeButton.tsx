@@ -6,7 +6,7 @@ type ResumeButtonProps = {};
 
 export default function ResumeButton({}: ResumeButtonProps) {
   return (
-    <div className="w-fit mx-auto text-center uppercase text-salad duration-300 transform hover:scale-110">
+    <button className="w-fit flex items-center gap-3 h-8 sm:h-9 lg:h-10 px-6 mx-auto rounded-lg border border-solid border-transparent hover:border-salad focus:border-salad text-medium uppercase text-salad duration-500">
       <Link
         className="flex gap-2 items-center"
         download
@@ -26,7 +26,7 @@ export default function ResumeButton({}: ResumeButtonProps) {
           className="w-3 h-3"
         />
       </Link>
-      <hr className="w-full h-[1px] border-solid border-salad" />
-    </div>
+      {/* <hr className="w-full h-[1px] border-solid border-salad" /> */}
+    </button>
   );
 }

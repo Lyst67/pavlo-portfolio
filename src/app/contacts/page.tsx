@@ -12,7 +12,7 @@ type Props = {};
 
 export default function Contacts({}: Props) {
   const baseClass =
-    "flex gap-4 justify-center items-center bg-dark-bg w-72 h-16 rounded-lg";
+    "flex gap-4 justify-center items-center bg-dark-bg w-72 h-16 rounded-lg border-solid border";
   return (
     <>
       <Toaster
@@ -20,19 +20,19 @@ export default function Contacts({}: Props) {
         toastOptions={{
           unstyled: true,
           classNames: {
-            error: `text-error ${baseClass}`,
-            success: `text-success ${baseClass}`,
-            info: `text-info ${baseClass}`,
+            error: `text-error border-error ${baseClass}`,
+            success: `text-success border-salad ${baseClass}`,
+            info: `text-info border-info ${baseClass}`,
           },
         }}
       />
-      <div className="p-10 h-[80vh]">
-        <div className="flex gap-6">
-          <div className="w-1/2 text-center">
-            <h2 className="mb-6 font-semibold text-4xl tracking-tighter">
+      <div className="grid items-center p-6 sm:p-8 md:p-10 md:h-[80vh]">
+        <div className="flex flex-col md:flex-row gap-6">
+          <div className="md:w-1/2 text-center space-y-6 lg:space-y-8 2xl:space-y-10">
+            <h2 className="mb-6 font-semibold text-2xl sm:text-3xl md:text-4xl tracking-tighter">
               Get in touch
             </h2>
-            <p className="text-sm w-3/4 mx-auto mb-5">
+            <p className="text-sm xl:text-base w-3/4 xl:w-2/3 mx-auto mb-5">
               Feel free to reach out if you're looking for a developer, have any
               questions, or just want to connect.
             </p>
@@ -43,7 +43,7 @@ export default function Contacts({}: Props) {
             </div>
           </div>
 
-          <div className="w-1/2">
+          <div className="md:w-1/2">
             <MessageForm />
           </div>
         </div>

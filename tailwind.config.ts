@@ -7,6 +7,13 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+     screens: {
+        "sm": "480px",
+        "md": "768px",
+        "lg": "1024px",
+        "xl": "1280px",
+        "2xl": "1536px",
+      },
     extend: {
       colors: {
         "base-bg": "#0b0f19",
@@ -17,15 +24,8 @@ const config: Config = {
         "salad": "#D3E97A",
         "error": "#ff6a00",
         "success": "#a8df71",
-        "info": "#00bdbd"
-
+        "info": "#00bdbd",
       },
-    },
-      screens: {
-      sm: "375px",
-      md: "768px",
-      lg: "1060px",
-      xl: "1280px",
     },
   },
   plugins: [],

@@ -30,10 +30,13 @@ export default function MobileMenu({ closeMenu, isVisible }: MobileMenuProps) {
             : "fixed top-0 right-[-100%] w-80 h-full p-6 z-10 ease-in duration-500 md:hidden"
         }
       >
-        <button onClick={closeMenu} className="block ml-auto">
+        <button
+          onClick={closeMenu}
+          className="block ml-auto focus:scale-125 hover:scale-125 duration-300"
+        >
           <Image src="/x.svg" alt="x" width={20} height={20} />
         </button>
-        <ul className="flex flex-col gap-5 my-8 text-base font-medium">
+        <ul className="flex flex-col gap-8 my-8 text-base font-medium">
           {navLinks.map((link) => {
             const isActive =
               currentPath.includes(link.name.toLowerCase()) ||
@@ -49,10 +52,11 @@ export default function MobileMenu({ closeMenu, isVisible }: MobileMenuProps) {
             );
           })}
         </ul>
-        <hr className="h-[1px] mb-5 border-solid border-gray-bg" />
-
-        <SocialLinks />
-        <ResumeButton />
+        <hr className="h-[1px] mb-8 border-solid border-gray-bg" />
+        <div className="grid gap-10">
+          <SocialLinks />
+          <ResumeButton />
+        </div>
       </div>
     </>
   );

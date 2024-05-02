@@ -10,12 +10,13 @@ export default function HeaderNav(props: HeaderNavProps) {
   const currentPath = usePathname();
   return (
     <>
-      <nav className="hidden md:flex gap-4 items-center mx-auto">
-        <ul className="flex gap-4 text-base font-medium">
+      <nav className="hidden md:flex items-center mx-auto">
+        <ul className="flex md:gap-4 lg:gap-8 xl:gap-10  lg:text-lg font-medium">
           {navLinks.map((link) => {
             const isActive =
-              currentPath.includes(link.name.toLowerCase()) ||
-              currentPath === link.href;
+              currentPath.includes(
+                link.name.toLowerCase().replace("//", "").trim()
+              ) || currentPath === link.href;
 
             return <NavItem key={link.name} link={link} isActive={isActive} />;
           })}

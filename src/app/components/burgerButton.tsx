@@ -8,7 +8,10 @@ type BurgerButtonProps = {
 
 export default function BurgerButton({ showMenu }: BurgerButtonProps) {
   return (
-    <button onClick={showMenu} className="ml-auto md:hidden">
+    <button
+      onClick={showMenu}
+      className="ml-auto md:hidden hover:scale-110 focus:scale-110 duration-300"
+    >
       <Image src="/mobil_menu.svg" alt="burger button" width={28} height={16} />
     </button>
   );
