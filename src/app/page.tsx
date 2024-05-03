@@ -1,4 +1,3 @@
-"use client";
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React from "react";
@@ -30,7 +29,7 @@ export default function Home({}: HomeProps) {
                 Pavlo Lystopad
               </h1>
               <p className="mt-3 text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
-                {`< Full-Stack Developer />`}
+                {`< FullStackDeveloper />`}
               </p>
             </div>
           </div>

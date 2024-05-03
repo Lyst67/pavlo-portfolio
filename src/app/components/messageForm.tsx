@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import emailjs from "@emailjs/browser";
 import { Formik, Form, Field } from "formik";
@@ -62,6 +61,9 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
     resetForm();
   };
 
+  const fieldStyles =
+    "text-sm md:text-base bg-dark-bg px-4 py-2 border border-solid border-transparent rounded-md hover:border-salad focus:border-salad outline-none";
+
   return (
     <>
       <Formik
@@ -70,7 +72,7 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
         validationSchema={MessageSchema}
       >
         {({ errors, touched, values }) => (
-          <Form className="w-full sm:max-w-96 lg:max-w-none lg:w-4/5 2xl:w-2/3 mx-auto space-y-6 lg:space-y-8 2xl:space-y-10">
+          <Form className="w-full sm:max-w-96 lg:max-w-none lg:w-4/5 2xl:w-2/3 mx-auto space-y-6 lg:space-y-7 2xl:space-y-9">
             <div className="grid">
               <label
                 className="text-sm md:text-base font-extralight"
@@ -79,7 +81,7 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
                 Name
               </label>
               <Field
-                className="text-sm md:text-base bg-dark-bg px-4 py-2 rounded-md"
+                className={fieldStyles}
                 name="name"
                 placeholder="Enter Your Name"
               />
@@ -97,7 +99,7 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
                 Email
               </label>
               <Field
-                className="text-sm md:text-base bg-dark-bg px-4 py-2 rounded-md"
+                className={fieldStyles}
                 name="email"
                 type="email"
                 placeholder="Enter Your Email"
@@ -116,7 +118,7 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
                 Message
               </label>
               <Field
-                className="text-sm md:text-base bg-dark-bg px-4 py-2 rounded-md"
+                className={fieldStyles}
                 rows="5"
                 as="textarea"
                 name="message"

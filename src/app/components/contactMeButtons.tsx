@@ -1,8 +1,8 @@
 import React from "react";
 import Button from "./button";
 import Link from "next/link";
-import LinkedInBtn from "./linkedInBtn";
-import GitHubBtn from "./gitHubBtn";
+import LinkedInButton from "./linkedInButton";
+import GitHubButton from "./gitHubButton";
 
 type Props = {};
 
@@ -12,8 +12,8 @@ export default function ContactMeButtons({}: Props) {
       <Button>
         <Link href={"/contacts"}>contact me</Link>
       </Button>
-      <LinkedInBtn />
-      <GitHubBtn />
+      <LinkedInButton />
+      <GitHubButton />
     </div>
   );
 }
