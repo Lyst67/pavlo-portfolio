@@ -67,6 +67,19 @@ export const otherProjects = [
     github: "https://github.com/Lyst67/rent-cars-redux",
   },
   {
+    image: "/images/phonebook.webp",
+    name: "Phonebook",
+    description:
+      "React app on five pages for contact management. Downloading, changing, and storing data using the Swagger API service.",
+    stack:
+      "Vite, HTML, CSS, TypeScript, React, Redux-Toolkit, Redux-Persist-Store, REST API, AJAX, PrivatRoute, Axios, React-loader, hot-toast",
+    type: "Individual project",
+    role: "Front-end developer",
+    year: "2024",
+    site: "https://phonebook-ts-seven.vercel.app/",
+    github: "https://github.com/Lyst67/phonebook-ts",
+  },
+  {
     image: "/images/tasty.webp",
     name: "Tasty Treats",
     description:
