@@ -13,7 +13,7 @@ export default function ResumeButton({}: ResumeButtonProps) {
         target="_blank"
         rel="noopener noreferrer"
         href={
-          "https://drive.google.com/file/d/1Zke24RghfoNjh66AcesqOnAgrJjxhf-6/view?usp=drive_link"
+          "https://drive.google.com/file/d/1uky1CiTd1WIAoTrMon2aw_tP_9gu6mVi/view?usp=drive_link"
         }
       >
         <span>resume</span>

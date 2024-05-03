@@ -39,7 +39,7 @@ export default function About({}: AboutProps) {
             width={0}
             height={0}
             sizes="100vw"
-            className="mix-blend-overlay w-[200%] h-[85vh] object-cover opacity-70"
+            className="mix-blend-overlay w-full h-[85vh] object-cover opacity-70"
           />
           <div className="absolute top-[50%] md:top-[35%] -translate-y-[50%] p-8">
             <h3 className="mb-2 md:mb-6 md:text-lg font-bold">
