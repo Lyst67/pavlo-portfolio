@@ -18,7 +18,7 @@ export default function About({}: AboutProps) {
             <div className="mt-4 w-full flex md:items-center justify-center">
               <div className="w-40 md:w-44 lg:w-52 rounded-lg overflow-hidden shadow-[5px_6px_2px_9px_rgba(144,144,144,0.20)]">
                 <Image
-                  src="/images/my_photo_5.webp"
+                  src="/images/my_photo_6.webp"
                   alt="my photo"
                   width="0"
                   height="0"
