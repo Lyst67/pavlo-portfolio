@@ -38,17 +38,17 @@ export const projects = [
     github: "https://github.com/Sokilskill/project-daily-energy-dose",
   },
   {
-    image: "/images/movies.webp",
-    name: "Best Movies",
+    image: "/images/phonebook11.webp",
+    name: "Phonebook",
     description:
-      "Introducing a convenient application on three pages that will help you find and get information about the most popular movies of the week.",
+      "React app with responsive design on five pages for contact management. Downloading, changing, and storing data using the Swagger API service.",
     stack:
-      "WebPack, HTML, CSS, React.js, React-Dom, React-Router-Dom, Axios, TMDB API...",
+      "Vite, HTML, CSS, TypeScript, React, Redux-Toolkit, Redux-Persist-Store, REST API, AJAX, PrivatRoute, Axios, React-loader, hot-toast",
     type: "Individual project",
     role: "Front-end developer",
-    year: "2023",
-    site: "https://lyst67.github.io/best-movies-search/movies/157336/cast",
-    github: "https://github.com/Lyst67/best-movies-search",
+    year: "2024",
+    site: "https://phonebook-ts-seven.vercel.app/",
+    github: "https://github.com/Lyst67/phonebook-ts",
   },
 ];
 
@@ -67,17 +67,17 @@ export const otherProjects = [
     github: "https://github.com/Lyst67/rent-cars-redux",
   },
   {
-    image: "/images/phonebook.webp",
-    name: "Phonebook",
+    image: "/images/movies.webp",
+    name: "Best Movies",
     description:
-      "React app on five pages for contact management. Downloading, changing, and storing data using the Swagger API service.",
+      "Introducing a convenient application on three pages that will help you find and get information about the most popular movies of the week.",
     stack:
-      "Vite, HTML, CSS, TypeScript, React, Redux-Toolkit, Redux-Persist-Store, REST API, AJAX, PrivatRoute, Axios, React-loader, hot-toast",
+      "WebPack, HTML, CSS, React.js, React-Dom, React-Router-Dom, Axios, TMDB API...",
     type: "Individual project",
     role: "Front-end developer",
-    year: "2024",
-    site: "https://phonebook-ts-seven.vercel.app/",
-    github: "https://github.com/Lyst67/phonebook-ts",
+    year: "2023",
+    site: "https://lyst67.github.io/best-movies-search/movies/157336/cast",
+    github: "https://github.com/Lyst67/best-movies-search",
   },
   {
     image: "/images/tasty.webp",
