@@ -2,7 +2,7 @@
 
 import { ThreeCircles } from "react-loader-spinner";
 
-export const Loader = () => {
+const Loading = () => {
   return (
     <div className="flex justify-center w-full absolute top-1/3">
       <div className="flex justify-center w-full">
@@ -19,3 +19,4 @@ export const Loader = () => {
     </div>
   );
 };
+export default Loading;

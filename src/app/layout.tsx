@@ -4,7 +4,7 @@ import "./globals.css";
 import { Header } from "./components/header";
 import { Suspense } from "react";
 import Footer from "./components/footer";
-import { Loader } from "./components/loader";
+import Loading from "./loading";
 
 const inter = Inter({ subsets: ["latin"] });
 const font = Raleway({ subsets: ["latin"] });
@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <Header />
-        <Suspense fallback={<Loader />}>
+        <Suspense fallback={<Loading />}>
           <section className="bg-base-bg">{children}</section>
         </Suspense>
         <Footer />

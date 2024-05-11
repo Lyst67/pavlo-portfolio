@@ -46,7 +46,7 @@ export default function About({}: AboutProps) {
               I am a full-stack developer based in Kyiv.
             </h3>
             <hr className="lg:hidden mb-2 h-[1px] border-solid border-gray-bg" />
-            <p className="text-sm md:text-base font-semibold mb-10 opacity-85">
+            <p className="text-sm text-text md:text-base font-semibold mb-10 opacity-85">
               I'm a full-stack developer from Kyiv, looking for some interesting
               opportunities I have a background in the field of design and
               individual orders in the field of fashion. Able to work in contact

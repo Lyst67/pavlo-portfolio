@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import LinkToButton from "./linkToButton";
 
 interface WorkListProps {
   projectList: {
@@ -72,35 +72,9 @@ export default function WorkList({ projectList }: WorkListProps) {
                 </li>
                 <hr className="h-[1px] border-solid border-gray-bg" />
               </ul>
-              <div className="flex gap-4 mt-3 text-salad text-sm uppercase">
-                <div className="duration-300 transform hover:scale-110">
-                  <Link href={site} className="flex gap-2 items-center">
-                    <span>view project</span>
-                    <Image
-                      src="/arrow.svg"
-                      alt="arrow"
-                      width="0"
-                      height="0"
-                      sizes="100vw"
-                      className="w-3 h-3"
-                    />
-                  </Link>
-                  <hr className="w-full h-[1px] border-solid border-salad" />
-                </div>
-                <div className="duration-300 transform hover:scale-110">
-                  <Link href={github} className="flex gap-2 items-center">
-                    <span>GitHub</span>
-                    <Image
-                      src="/arrow.svg"
-                      alt="arrow"
-                      width="0"
-                      height="0"
-                      sizes="100vw"
-                      className="w-3 h-3"
-                    />
-                  </Link>
-                  <hr className="w-full h-[1px] border-solid border-salad" />
-                </div>
+              <div className="flex gap-4 mt-3">
+                <LinkToButton href={site}>view project</LinkToButton>
+                <LinkToButton href={github}>github</LinkToButton>
               </div>
             </div>
           </li>
