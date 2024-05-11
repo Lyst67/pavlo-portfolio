@@ -1,8 +1,9 @@
 import React from "react";
 import Button from "./button";
 import Link from "next/link";
-import LinkedInButton from "./linkedInButton";
-import GitHubButton from "./gitHubButton";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import LinkRoundButton from "./linkRoundButton";
 
 type Props = {};
 
@@ -12,8 +13,12 @@ export default function ContactMeButtons({}: Props) {
       <Button>
         <Link href={"/contacts"}>contact me</Link>
       </Button>
-      <LinkedInButton />
-      <GitHubButton />
+      <LinkRoundButton href="https://www.linkedin.com/in/pavlo-lystopad/">
+        <FaLinkedinIn className="w-6 h-6" />
+      </LinkRoundButton>
+      <LinkRoundButton href="https://github.com/Lyst67">
+        <FaGithub className="w-6 h-6" />
+      </LinkRoundButton>
     </div>
   );
 }
