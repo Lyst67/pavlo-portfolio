@@ -27,16 +27,16 @@ export const Header = (props: HeaderProps) => {
   return (
     <header className={isHome ? "fixed w-full z-10" : ""}>
       <div className="flex h-11 md:h-16 px-8 lg:px-12 xl:px-20 items-center">
-        <div className="flex gap-1 items-center ">
-          <Image
-            src="/logo_white.png"
-            alt="my logo"
-            width="0"
-            height="0"
-            sizes="100vw"
-            className="w-9 h-9"
-          />
-          <Link href={"/"}>
+        <div>
+          <Link href={"/"} className="flex gap-1 items-center">
+            <Image
+              src="/logo_white.png"
+              alt="my logo"
+              width="0"
+              height="0"
+              sizes="100vw"
+              className="w-9 h-9"
+            />
             <div className="hidden sm:block duration-300 hover:scale-110 focus:scale-110">
               Pavlo Lystopad
             </div>
