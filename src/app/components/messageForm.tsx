@@ -125,7 +125,7 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
                 type="text"
                 placeholder="Enter Your Message"
               />
-              {errors.email && touched.email ? (
+              {errors.message && touched.message ? (
                 <div className="text-xs mt-1 text-error">{errors.message}</div>
               ) : !errors.message && values.message ? (
                 <div className="text-xs mt-1 text-success">Success</div>
