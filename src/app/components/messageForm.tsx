@@ -76,7 +76,7 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
             <div className="grid">
               <label
                 className="text-sm md:text-base font-extralight"
-                htmlFor="email"
+                htmlFor="name"
               >
                 Name
               </label>
@@ -113,7 +113,7 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
             <div className="grid">
               <label
                 className="text-sm md:text-base font-extralight"
-                htmlFor="email"
+                htmlFor="message"
               >
                 Message
               </label>
