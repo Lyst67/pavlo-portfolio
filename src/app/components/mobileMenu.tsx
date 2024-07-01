@@ -61,6 +61,3 @@ export default function MobileMenu({ closeMenu, isVisible }: MobileMenuProps) {
     </>
   );
 }
-function isShown() {
-  throw new Error("Function not implemented.");
-}
