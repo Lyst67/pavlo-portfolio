@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { projects } from "@/lib/projects";
-import { usePathname } from "next/navigation";
-import WorkList from "../components/workList";
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import { projects } from '@/lib/projects';
+import { usePathname } from 'next/navigation';
+import WorkList from '../components/workList';
 
 type PortfolioProps = {};
 
 export default function Portfolio({}: PortfolioProps) {
   const currentPath = usePathname();
-  const isPathOthers = currentPath.endsWith("/others");
+  const isPathOthers = currentPath.endsWith('/others');
   return (
     <div className="px-8 py-10 md:px-12">
       <div className="mb-5 md:mb-10">
@@ -19,15 +19,15 @@ export default function Portfolio({}: PortfolioProps) {
           Featured Projects
         </h2>
         <p className="text-sm w-full sm:w-4/5 md:w-96">
-          Here are some of the selected projects that showcase my passion for
-          front-end/back-end development.
+          Here are some of the selected projects that showcase my passion for front-end/back-end
+          development.
         </p>
       </div>
       <div>
         <WorkList projectList={projects} />
         {!isPathOthers && (
           <div className="w-fit mx-auto mt-10 text-center uppercase text-salad duration-300 transform hover:scale-110">
-            <Link className="flex gap-2 items-center" href={"/work/others"}>
+            <Link className="flex gap-2 items-center" href={'/work/others'}>
               <span>view more</span>
               <Image
                 src="/arrow-right-down.svg"

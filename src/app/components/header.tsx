@@ -1,34 +1,34 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import React, { useState } from "react";
-import HeaderNav from "./headerNav";
-import ResumeButton from "./resumeButton";
-import BurgerButton from "./burgerButton";
-import MobileMenu from "./mobileMenu";
-import { usePathname } from "next/navigation";
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useState } from 'react';
+import HeaderNav from './headerNav';
+import ResumeButton from './resumeButton';
+import BurgerButton from './burgerButton';
+import MobileMenu from './mobileMenu';
+import { usePathname } from 'next/navigation';
 
 interface HeaderProps {}
 
 export const Header = (props: HeaderProps) => {
   const [show, setShow] = useState(false);
   const currentPath = usePathname();
-  const isHome = currentPath.endsWith("/");
+  const isHome = currentPath.endsWith('/');
 
   const handleShow = () => {
     setShow(!show);
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow = 'hidden';
   };
   const closeMenu = () => {
     setShow(false);
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = 'auto';
   };
 
   return (
-    <header className={isHome ? "fixed w-full z-10" : ""}>
+    <header className={isHome ? 'fixed w-full z-10' : ''}>
       <div className="flex h-11 md:h-16 px-8 lg:px-12 xl:px-20 items-center">
         <div>
-          <Link href={"/"} className="flex gap-1 items-center">
+          <Link href={'/'} className="flex gap-1 items-center">
             <Image
               src="/logo_white.png"
               alt="my logo"

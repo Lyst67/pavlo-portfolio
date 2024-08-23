@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import Image from "next/image";
-import React from "react";
-import Link from "next/link";
-import ContactMeButtons from "./components/contactMeButtons";
+import Image from 'next/image';
+import React from 'react';
+import Link from 'next/link';
+import ContactMeButtons from './components/contactMeButtons';
 
 type HomeProps = {};
 
@@ -11,7 +11,7 @@ export default function Home({}: HomeProps) {
     <>
       <div className="relative h-[70vh] md:h-[75vh] bg-gradient-to-br from-base-bg via-gray-700 to-base-bg">
         <Image
-          src={"/images/black_c.webp"}
+          src={'/images/black_c.webp'}
           alt="spain cost"
           width={0}
           height={0}
@@ -25,9 +25,7 @@ export default function Home({}: HomeProps) {
               Hi, I am
             </p>
             <div className="bg-gradient-to-r from-gray-bg  via-salad  to-[#550290] text-transparent bg-clip-text">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-                Pavlo Lystopad
-              </h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Pavlo Lystopad</h1>
               <p className="mt-3 text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
                 {`< FullStackDeveloper />`}
               </p>
@@ -35,13 +33,13 @@ export default function Home({}: HomeProps) {
           </div>
 
           <p className="sm:w-4/5 text-sm md:text-base lg:text-lg font-semibold ">
-            A Kyiv based Full-stack developer passionate about building
-            accessible and user friendly websites.
+            A Kyiv based Full-stack developer passionate about building accessible and user friendly
+            websites.
           </p>
           <div>
             <Link
               className="flex gap-1 items-center"
-              href={"https://maps.app.goo.gl/hxBt8hcqaV8noxheA"}
+              href={'https://maps.app.goo.gl/hxBt8hcqaV8noxheA'}
             >
               <Image
                 src="/map.svg"
@@ -68,17 +66,13 @@ export default function Home({}: HomeProps) {
       <div className="px-8 lg:px-12 xl:px-20 py-4 bg-second-bg bg-[url('/itb.svg')] bg-right bg-no-repeat bg-contain">
         <h2 className="text-xl">About me</h2>
         <p className="my-2 md:my-3 font-light text-sm lg:text-base sm:w-4/5 md:w-3/4 ">
-          I'm a full stack developer (React.js & Node.js) with a focus on
-          creating exceptional digital experiences that are accessible, visually
-          appealing, and responsive. Even though I have been creating web
-          applications for only more than 1 year, I am rapidly gaining
+          I'm a full stack developer (React.js & Node.js) with a focus on creating exceptional
+          digital experiences that are accessible, visually appealing, and responsive. Even though I
+          have been creating web applications for only more than 1 year, I am rapidly gaining
           experience because I really like to learn new technologies.
         </p>
         <button className="duration-300 transform hover:scale-110 focus:scale-110">
-          <Link
-            href={"/about"}
-            className="underline uppercase text-sm text-salad"
-          >
+          <Link href={'/about'} className="underline uppercase text-sm text-salad">
             more about me
           </Link>
         </button>

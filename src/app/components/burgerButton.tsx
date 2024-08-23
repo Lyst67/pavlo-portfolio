@@ -1,6 +1,6 @@
-"use client";
-import Image from "next/image";
-import React from "react";
+'use client';
+import Image from 'next/image';
+import React from 'react';
 
 type BurgerButtonProps = {
   showMenu: () => void;

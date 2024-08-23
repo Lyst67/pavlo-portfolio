@@ -1,18 +1,15 @@
-"use client";
-import React from "react";
-import emailjs from "@emailjs/browser";
-import { Formik, Form, Field } from "formik";
-import * as Yup from "yup";
-import Button from "../components/button";
-import { toast } from "sonner";
+'use client';
+import React from 'react';
+import emailjs from '@emailjs/browser';
+import { Formik, Form, Field } from 'formik';
+import * as Yup from 'yup';
+import Button from '../components/button';
+import { toast } from 'sonner';
 
 const MessageSchema = Yup.object().shape({
-  name: Yup.string()
-    .min(2, "Too Short!")
-    .max(50, "Too Long!")
-    .required("Required"),
-  email: Yup.string().email("Invalid email").required("Required"),
-  message: Yup.string().min(2, "Too Short!").required("Required"),
+  name: Yup.string().min(2, 'Too Short!').max(50, 'Too Long!').required('Required'),
+  email: Yup.string().email('Invalid email').required('Required'),
+  message: Yup.string().min(2, 'Too Short!').required('Required'),
 });
 
 type MessageFormValues = {
@@ -22,9 +19,9 @@ type MessageFormValues = {
 };
 
 const initialValues: MessageFormValues = {
-  name: "",
-  email: "",
-  message: "",
+  name: '',
+  email: '',
+  message: '',
 };
 
 export interface MessageFormProps {
@@ -36,7 +33,7 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
     const templateParams = {
       from_name: values.name,
       from_email: values.email,
-      to_name: "Pavlo Lystopad",
+      to_name: 'Pavlo Lystopad',
       message: values.message,
     };
 
@@ -50,41 +47,30 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
       })
       .then(
         (response) => {
-          toast.success("Your message has been sent!");
-          console.log("SUCCESS!", response.status, response.text);
+          toast.success('Your message has been sent!');
+          console.log('SUCCESS!', response.status, response.text);
         },
         (err) => {
-          toast.error("Something went wrong!");
-          console.log("FAILED...", err);
-        }
+          toast.error('Something went wrong!');
+          console.log('FAILED...', err);
+        },
       );
     resetForm();
   };
 
   const fieldStyles =
-    "text-sm md:text-base bg-dark-bg px-4 py-2 border border-solid border-transparent rounded-md hover:border-salad focus:border-salad outline-none";
+    'text-sm md:text-base bg-dark-bg px-4 py-2 border border-solid border-transparent rounded-md hover:border-salad focus:border-salad duration-300 outline-none';
 
   return (
     <>
-      <Formik
-        onSubmit={sendEmail}
-        initialValues={initialValues}
-        validationSchema={MessageSchema}
-      >
+      <Formik onSubmit={sendEmail} initialValues={initialValues} validationSchema={MessageSchema}>
         {({ errors, touched, values }) => (
           <Form className="w-full sm:max-w-96 lg:max-w-none lg:w-4/5 2xl:w-2/3 mx-auto space-y-6 lg:space-y-7 2xl:space-y-9">
             <div className="grid">
-              <label
-                className="text-sm md:text-base font-extralight"
-                htmlFor="name"
-              >
+              <label className="text-sm md:text-base font-extralight" htmlFor="name">
                 Name
               </label>
-              <Field
-                className={fieldStyles}
-                name="name"
-                placeholder="Enter Your Name"
-              />
+              <Field className={fieldStyles} name="name" placeholder="Enter Your Name" />
               {errors.name && touched.name ? (
                 <div className="text-xs mt-1 text-error">{errors.name}</div>
               ) : !errors.name && values.name ? (
@@ -92,10 +78,7 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
               ) : null}
             </div>
             <div className="grid">
-              <label
-                className="text-sm md:text-base font-extralight"
-                htmlFor="email"
-              >
+              <label className="text-sm md:text-base font-extralight" htmlFor="email">
                 Email
               </label>
               <Field
@@ -111,10 +94,7 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
               ) : null}
             </div>
             <div className="grid">
-              <label
-                className="text-sm md:text-base font-extralight"
-                htmlFor="message"
-              >
+              <label className="text-sm md:text-base font-extralight" htmlFor="message">
                 Message
               </label>
               <Field

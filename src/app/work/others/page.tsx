@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import WorkList from "@/app/components/workList";
-import { otherProjects } from "@/lib/projects";
-import Image from "next/image";
-import React from "react";
+import WorkList from '@/app/components/workList';
+import { otherProjects } from '@/lib/projects';
+import Image from 'next/image';
+import React from 'react';
 
 interface OtherProps {}
 
@@ -15,7 +15,7 @@ const Others = ({}: OtherProps): JSX.Element => {
         onClick={() =>
           window.scrollTo({
             top: 0,
-            behavior: "smooth",
+            behavior: 'smooth',
           })
         }
         className="animate-bounce block my-10 mx-auto"

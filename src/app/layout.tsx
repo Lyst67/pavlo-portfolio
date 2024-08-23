@@ -1,17 +1,17 @@
-import type { Metadata } from "next";
-import { Inter, Raleway } from "next/font/google";
-import "./globals.css";
-import { Header } from "./components/header";
-import { Suspense } from "react";
-import Footer from "./components/footer";
-import Loading from "./loading";
+import type { Metadata } from 'next';
+import { Inter, Raleway } from 'next/font/google';
+import './globals.css';
+import { Header } from './components/header';
+import { Suspense } from 'react';
+import Footer from './components/footer';
+import Loading from './loading';
 
-const inter = Inter({ subsets: ["latin"] });
-const font = Raleway({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
+const font = Raleway({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Pavlo Portfolio",
-  description: "Pavlo Lystopad portfolio site",
+  title: 'Pavlo Portfolio',
+  description: 'Pavlo Lystopad portfolio site',
 };
 
 export default function RootLayout({

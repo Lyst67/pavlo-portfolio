@@ -1,6 +1,6 @@
-import Image from "next/image";
-import React from "react";
-import LinkToButton from "./linkToButton";
+import Image from 'next/image';
+import React from 'react';
+import LinkToButton from './linkToButton';
 
 interface WorkListProps {
   projectList: {
@@ -20,17 +20,7 @@ export default function WorkList({ projectList }: WorkListProps) {
   return (
     <ul className="grid gap-10">
       {projectList.map((project) => {
-        const {
-          image,
-          name,
-          description,
-          stack,
-          type,
-          role,
-          year,
-          site,
-          github,
-        } = project;
+        const { image, name, description, stack, type, role, year, site, github } = project;
         return (
           <li key={name} className="grid gap-10 lg:grid-cols-2">
             <div className="p-10 bg-second-bg flex justify-center items-center rounded-xl overflow-hidden">

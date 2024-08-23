@@ -1,5 +1,4 @@
-
-import LinkToButton from "./components/linkToButton";
+import LinkToButton from './components/linkToButton';
 
 export default function NotFound() {
   return (

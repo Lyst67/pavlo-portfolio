@@ -1,7 +1,7 @@
-import { socialLinks } from "@/lib/socialLinks";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import { socialLinks } from '@/lib/socialLinks';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
 type Props = {};
 

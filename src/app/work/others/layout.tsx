@@ -1,5 +1,5 @@
-import React from "react";
-import Portfolio from "../page";
+import React from 'react';
+import Portfolio from '../page';
 
 type OtherLayoutProps = {
   children: React.ReactNode;

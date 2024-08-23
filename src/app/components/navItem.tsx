@@ -1,5 +1,5 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 
 type NavItemProps = {
   link: {
@@ -16,7 +16,7 @@ export const NavItem = ({ link, isActive, closeMenu }: NavItemProps) => {
       <Link
         onClick={closeMenu}
         href={link.href}
-        className={isActive ? "text-salad underline" : "text-inherit"}
+        className={isActive ? 'text-salad underline' : 'text-inherit'}
       >
         {link.name}
       </Link>

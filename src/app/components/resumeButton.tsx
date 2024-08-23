@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
 type ResumeButtonProps = {};
 
@@ -13,18 +13,11 @@ export default function ResumeButton({}: ResumeButtonProps) {
         target="_blank"
         rel="noopener noreferrer"
         href={
-          "https://drive.google.com/file/d/1l9Msq3mM60b3wSJldg4rW27a2jS9cAkx/view?usp=drive_link"
+          'https://drive.google.com/file/d/1l9Msq3mM60b3wSJldg4rW27a2jS9cAkx/view?usp=drive_link'
         }
       >
         <span>resume</span>
-        <Image
-          src="/down.svg"
-          alt="arrow"
-          width="0"
-          height="0"
-          sizes="100vw"
-          className="w-3 h-3"
-        />
+        <Image src="/down.svg" alt="arrow" width="0" height="0" sizes="100vw" className="w-3 h-3" />
       </Link>
       {/* <hr className="w-full h-[1px] border-solid border-salad" /> */}
     </button>

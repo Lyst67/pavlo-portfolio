@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { ThreeCircles } from "react-loader-spinner";
+import { ThreeCircles } from 'react-loader-spinner';
 
 const Loading = () => {
   return (

@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
-import Image from "next/image";
-import { flags, technologies } from "@/lib/skills";
-import ContactMeButtons from "../components/contactMeButtons";
+import React from 'react';
+import Image from 'next/image';
+import { flags, technologies } from '@/lib/skills';
+import ContactMeButtons from '../components/contactMeButtons';
 
 type AboutProps = {};
 
@@ -34,7 +34,7 @@ export default function About({}: AboutProps) {
 
         <div className="relative h-[85vh] lg:w-2/3 rounded-xl bg-gradient-to-br from-base-bg via-gray-700 to-base-bg">
           <Image
-            src={"/images/black7.webp"}
+            src={'/images/black7.webp'}
             alt="spain cost"
             width={0}
             height={0}
@@ -47,17 +47,15 @@ export default function About({}: AboutProps) {
             </h3>
             <hr className="lg:hidden mb-2 h-[1px] border-solid border-gray-bg" />
             <p className="text-sm text-text md:text-base font-semibold mb-10 opacity-85">
-              I'm a full-stack developer from Kyiv, looking for some interesting
-              opportunities I have a background in the field of design and
-              individual orders in the field of fashion. Able to work in contact
-              with the client to fulfill the order as accurately as possible. I
-              like to focus on availability during development. Passionate and
-              interested in solutions to technical problems. I am currently
-              exploring Next.js, SASS, Docker, etc. <br /> While I am not
-              programming, I enjoy learning Spanish and riding a handbike. Also,
-              I am developing technical devices for driving cars for people with
-              disabilities. But my biggest passion is traveling. I also study
-              more for improving skills.
+              I'm a full-stack developer from Kyiv, looking for some interesting opportunities I
+              have a background in the field of design and individual orders in the field of
+              fashion. Able to work in contact with the client to fulfill the order as accurately as
+              possible. I like to focus on availability during development. Passionate and
+              interested in solutions to technical problems. I am currently exploring Next.js, SASS,
+              Docker, etc. <br /> While I am not programming, I enjoy learning Spanish and riding a
+              handbike. Also, I am developing technical devices for driving cars for people with
+              disabilities. But my biggest passion is traveling. I also study more for improving
+              skills.
             </p>
             <ContactMeButtons />
           </div>
@@ -114,18 +112,14 @@ export default function About({}: AboutProps) {
             My Skills
           </h2>
           <p className="mb-6 text-sm lg:text-base mx-auto">
-            The skills, tools, and technologies I use in my daily work and learn
-            now.
+            The skills, tools, and technologies I use in my daily work and learn now.
           </p>
         </div>
         <div className="lg:w-2/3">
           <ul className="grid grid-cols-4 gap-y-4">
             {technologies.map((item) => {
               return (
-                <li
-                  key={item.text}
-                  className="flex flex-col gap-2 items-center"
-                >
+                <li key={item.text} className="flex flex-col gap-2 items-center">
                   <Image
                     src={item.image}
                     alt={item.text}
@@ -134,9 +128,7 @@ export default function About({}: AboutProps) {
                     sizes="100vw"
                     className="w-10 h-10 sm:w-12 sm:h-12"
                   />
-                  <span className="text-xs sm:text-sm md:text-base">
-                    {item.text}
-                  </span>
+                  <span className="text-xs sm:text-sm md:text-base">{item.text}</span>
                 </li>
               );
             })}
@@ -154,10 +146,7 @@ export default function About({}: AboutProps) {
           <ul className="grid grid-cols-3 md:grid-cols-4">
             {flags.map((flag) => {
               return (
-                <li
-                  key={flag.description}
-                  className="flex flex-col gap-2 items-center"
-                >
+                <li key={flag.description} className="flex flex-col gap-2 items-center">
                   <div className="rounded-full overflow-hidden">
                     <Image
                       src={flag.src}
