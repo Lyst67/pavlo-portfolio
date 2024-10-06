@@ -4,7 +4,7 @@ export const projects = [
     name: 'Dorosh-Art-Gallery',
     description: `The website is responsive, has 8 main pages, include 7 public pages (Home, Catalog, Events, About, Services, Contacts, Favorites) and a private Admin page with which the owner of the Gallary can add, delete, and edit pictures catalog and info about it. The site has bilingual interface and a dark/light theme switcher`,
     stack:
-      'Next.js, React.js, TypeScript, Tailwind CSS, Framer-motion, Axios, Bcript, Formik, Nanoid, Email.js, Sonner, Yup, Zod, and also Cloudinary service for picture images and PostgresSQL-Prisma database for picture info',
+      'Next.js, React.js, TypeScript, Tailwind CSS, Framer-motion, Axios, Bcript, Formik, Nanoid, Email.js, Sonner, Yup, Zod, and also Cloudinary service for picture images and PostgreSQL-Prisma database for picture info',
     type: 'Individual project',
     role: 'FullStack developer, web designer',
     year: '2024',
