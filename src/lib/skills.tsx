@@ -13,6 +13,8 @@ export const technologies = [
   { image: './skills/figma.svg', text: 'Figma' },
   { image: './skills/sass.svg', text: 'SASS' },
   { image: './skills/docker.svg', text: 'Docker' },
+  { image: './skills/light-prisma.svg', text: 'Prisma' },
+  { image: './skills/cloudinary.svg', text: 'Cloudinary' },
 ];
 
 export const flags = [

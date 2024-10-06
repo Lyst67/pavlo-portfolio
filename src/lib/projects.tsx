@@ -6,7 +6,7 @@ export const projects = [
     stack:
       'Next.js, React.js, TypeScript, Tailwind CSS, Framer-motion, Axios, Bcript, Formik, Nanoid, Email.js, Sonner, Yup, Zod, and also Cloudinary service for picture images and PostgresSQL-Prisma database for picture info',
     type: 'Individual project',
-    role: 'FullStack developer',
+    role: 'FullStack developer, web designer',
     year: '2024',
     site: 'https://dorosh-art-gallery.vercel.app/',
   },

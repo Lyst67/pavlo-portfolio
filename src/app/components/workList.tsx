@@ -64,7 +64,7 @@ export default function WorkList({ projectList }: WorkListProps) {
               </ul>
               <div className="flex gap-4 mt-3">
                 <LinkToButton href={site}>view project</LinkToButton>
-                {github && <LinkToButton href={github}>github</LinkToButton>}
+                {github ? <LinkToButton href={github}>github</LinkToButton> : <p>Private</p>}
               </div>
             </div>
           </li>
