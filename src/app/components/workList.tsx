@@ -12,7 +12,7 @@ interface WorkListProps {
     role: string;
     year: string;
     site: string;
-    github: string;
+    github?: string;
   }[];
 }
 
@@ -37,7 +37,7 @@ export default function WorkList({ projectList }: WorkListProps) {
             </div>
             <div className="lg:my-auto">
               <h3 className="text-xl">{name}</h3>
-              <p className="my-3 text-sm">{description}</p>
+              <p className="bg-second-bg my-3 text-sm">{description}</p>
               <div className="mb-2">
                 <h4>Technology stack:</h4>
                 <div className="bg-second-bg rounded-lg text-sm">
@@ -48,23 +48,23 @@ export default function WorkList({ projectList }: WorkListProps) {
               <ul className=" text-sm">
                 <li className="my-2 flex justify-between">
                   <p>Type</p>
-                  <p>{type}</p>
+                  <p className="bg-second-bg">{type}</p>
                 </li>
                 <hr className="h-[1px] border-solid border-gray-bg" />
                 <li className="my-2 flex justify-between">
                   <p>Role</p>
-                  <p>{role}</p>
+                  <p className="bg-second-bg">{role}</p>
                 </li>
                 <hr className="h-[1px] border-solid border-gray-bg" />
                 <li className="my-2 flex justify-between">
                   <p>Year</p>
-                  <p>{year}</p>
+                  <p className="bg-second-bg">{year}</p>
                 </li>
                 <hr className="h-[1px] border-solid border-gray-bg" />
               </ul>
               <div className="flex gap-4 mt-3">
                 <LinkToButton href={site}>view project</LinkToButton>
-                <LinkToButton href={github}>github</LinkToButton>
+                {github && <LinkToButton href={github}>github</LinkToButton>}
               </div>
             </div>
           </li>

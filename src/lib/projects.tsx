@@ -1,5 +1,16 @@
 export const projects = [
   {
+    image: '/images/gallery.webp',
+    name: 'Dorosh-Art-Gallery',
+    description: `The website is responsive, has 8 main pages, include 7 public pages (Home, Catalog, Events, About, Services, Contacts, Favorites) and a private Admin page with which the owner of the Gallary can add, delete, and edit pictures catalog and info about it. The site has bilingual interface and a dark/light theme switcher`,
+    stack:
+      'Next.js, React.js, TypeScript, Tailwind CSS, Framer-motion, Axios, Bccript, Formik, Nanoid, Email.js, Sonner, Yup, Zod, and also Cloudinary service for picture images and PostgresSQL-Prisma database for picture info',
+    type: 'Individual project',
+    role: 'FullStack developer',
+    year: '2024',
+    site: 'https://dorosh-art-gallery.vercel.app/',
+  },
+  {
     image: '/images/crm.webp',
     name: 'CRM for vendors',
     description:
