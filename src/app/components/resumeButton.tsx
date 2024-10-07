@@ -19,7 +19,6 @@ export default function ResumeButton({}: ResumeButtonProps) {
         <span>resume</span>
         <Image src="/down.svg" alt="arrow" width="0" height="0" sizes="100vw" className="w-3 h-3" />
       </Link>
-      {/* <hr className="w-full h-[1px] border-solid border-salad" /> */}
     </button>
   );
 }
