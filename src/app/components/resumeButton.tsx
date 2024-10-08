@@ -1,6 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import { HiMiniArrowDownTray } from 'react-icons/hi2';
 
 type ResumeButtonProps = {};
 
@@ -17,7 +16,7 @@ export default function ResumeButton({}: ResumeButtonProps) {
         }
       >
         <span>resume</span>
-        <Image src="/down.svg" alt="arrow" width="0" height="0" sizes="100vw" className="w-3 h-3" />
+        <HiMiniArrowDownTray />
       </Link>
     </button>
   );

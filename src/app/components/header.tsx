@@ -8,9 +8,7 @@ import BurgerButton from './burgerButton';
 import MobileMenu from './mobileMenu';
 import { usePathname } from 'next/navigation';
 
-interface HeaderProps {}
-
-export const Header = (props: HeaderProps) => {
+export const Header = () => {
   const [show, setShow] = useState(false);
   const currentPath = usePathname();
   const isHome = currentPath.endsWith('/');

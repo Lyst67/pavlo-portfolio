@@ -1,6 +1,6 @@
 'use client';
-import Image from 'next/image';
-import React from 'react';
+
+import { RxHamburgerMenu } from 'react-icons/rx';
 
 type BurgerButtonProps = {
   showMenu: () => void;
@@ -12,7 +12,7 @@ export default function BurgerButton({ showMenu }: BurgerButtonProps) {
       onClick={showMenu}
       className="ml-auto md:hidden hover:scale-110 focus:scale-110 duration-300 ease-linear"
     >
-      <Image src="/mobil_menu.svg" alt="burger button" width={28} height={16} />
+      <RxHamburgerMenu className="w-8 h-8" />
     </button>
   );
 }
