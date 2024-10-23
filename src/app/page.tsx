@@ -18,7 +18,7 @@ export default function Home() {
 
         <div className="absolute top-[50%] -translate-y-[50%] grid gap-y-7 md:w-2/3 lg:w-3/5 p-8 md:px-12 xl:px-20 xl:pt-20  font-semibold">
           <div>
-            <p className="mb-3 text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tighter">
+            <p className="mb-3 mt-5 md:mt-10 lg:mt-5 text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tighter">
               Hi, I am
             </p>
             <div className="bg-gradient-to-r from-gray-bg  via-salad  to-[#550290] text-transparent bg-clip-text">
