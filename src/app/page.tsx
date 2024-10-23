@@ -1,12 +1,9 @@
-/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image';
-import React from 'react';
 import Link from 'next/link';
 import ContactMeButtons from './components/contactMeButtons';
+import { SiGooglemaps } from 'react-icons/si';
 
-type HomeProps = {};
-
-export default function Home({}: HomeProps) {
+export default function Home() {
   return (
     <>
       <div className="relative h-[70vh] md:h-[75vh] bg-gradient-to-br from-base-bg via-gray-700 to-base-bg">
@@ -36,19 +33,14 @@ export default function Home({}: HomeProps) {
             A Kyiv based Full-stack developer passionate about building accessible and user friendly
             websites.
           </p>
-          <div>
+          <div className="w-fit">
             <Link
-              className="flex gap-1 items-center"
+              className="flex gap-2 items-center hover:text-salad duration-500"
               href={'https://maps.app.goo.gl/hxBt8hcqaV8noxheA'}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Image
-                src="/map.svg"
-                alt="location"
-                width="0"
-                height="0"
-                sizes="100vw"
-                className="w-5 h-5"
-              />
+              <SiGooglemaps className="w-5 h-5" />
               <span>Brovary Kyiv area, Ukraine</span>
               <Image
                 src="/lang/ua_flag.svg"
@@ -66,7 +58,7 @@ export default function Home({}: HomeProps) {
       <div className="px-8 lg:px-12 xl:px-20 py-4 bg-second-bg bg-[url('/itb.svg')] bg-right bg-no-repeat bg-contain">
         <h2 className="text-xl">About me</h2>
         <p className="my-2 md:my-3 font-light text-sm lg:text-base sm:w-4/5 md:w-3/4 ">
-          I'm a full stack developer (React.js & Node.js) with a focus on creating exceptional
+          I am a full stack developer (React.js & Node.js) with a focus on creating exceptional
           digital experiences that are accessible, visually appealing, and responsive. Even though I
           have been creating web applications for only more than 1 year, I am rapidly gaining
           experience because I really like to learn new technologies.
