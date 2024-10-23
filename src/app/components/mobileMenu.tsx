@@ -1,11 +1,11 @@
 'use client';
-import React from 'react';
+
 import { NavItem } from './navItem';
 import { navLinks } from '@/lib/navLinks';
 import { usePathname } from 'next/navigation';
 import ResumeButton from './resumeButton';
-import Image from 'next/image';
 import SocialLinks from './socialLinks';
+import { IoCloseOutline } from 'react-icons/io5';
 
 type MobileMenuProps = {
   closeMenu: () => void;
@@ -31,7 +31,7 @@ export default function MobileMenu({ closeMenu, isVisible }: MobileMenuProps) {
           onClick={closeMenu}
           className="block ml-auto focus:scale-125 hover:scale-125 duration-300"
         >
-          <Image src="/x.svg" alt="x" width={20} height={20} />
+          <IoCloseOutline className="w-10 h-10" />
         </button>
         <ul className="flex flex-col gap-8 my-8 text-base font-medium">
           {navLinks.map((link) => {

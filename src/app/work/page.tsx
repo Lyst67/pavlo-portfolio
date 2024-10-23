@@ -1,15 +1,12 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 import { projects } from '@/lib/projects';
 import { usePathname } from 'next/navigation';
 import WorkList from '../components/workList';
+import { GoArrowDownRight } from 'react-icons/go';
 
-type PortfolioProps = {};
-
-export default function Portfolio({}: PortfolioProps) {
+export default function Portfolio() {
   const currentPath = usePathname();
   const isPathOthers = currentPath.endsWith('/others');
   return (
@@ -29,14 +26,7 @@ export default function Portfolio({}: PortfolioProps) {
           <div className="w-fit mx-auto mt-10 text-center uppercase text-salad duration-300 transform hover:scale-110">
             <Link className="flex gap-2 items-center" href={'/work/others'}>
               <span>view more</span>
-              <Image
-                src="/arrow-right-down.svg"
-                alt="arrow"
-                width="0"
-                height="0"
-                sizes="100vw"
-                className="w-5 h-5"
-              />
+              <GoArrowDownRight className="w-5 h-5" />
             </Link>
             <hr className="w-full h-[1px] border-solid border-salad" />
           </div>

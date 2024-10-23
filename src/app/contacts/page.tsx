@@ -1,16 +1,12 @@
 'use client';
 
-/* eslint-disable react/no-unescaped-entities */
-import React from 'react';
 import MessageForm from '../components/messageForm';
 import { Toaster } from 'sonner';
 import ResumeButton from '../components/resumeButton';
 import SocialLinks from '../components/socialLinks';
 import MyContacts from '../components/myContacts';
 
-type Props = {};
-
-export default function Contacts({}: Props) {
+export default function Contacts() {
   const baseClass =
     'flex gap-4 justify-center items-center bg-dark-bg w-72 h-16 rounded-lg border-solid border';
   return (
@@ -33,7 +29,7 @@ export default function Contacts({}: Props) {
               Get in touch
             </h2>
             <p className="text-sm xl:text-base w-3/4 xl:w-2/3 mx-auto mb-5">
-              Feel free to reach out if you're looking for a developer, have any questions, or just
+              Feel free to reach out if you are looking for a developer, have any questions, or just
               want to connect.
             </p>
             <div className="flex flex-col gap-5 items-center">

@@ -1,11 +1,8 @@
-import { socialLinks } from '@/lib/socialLinks';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import { socialLinks } from '@/lib/socialLinks';
 
-type Props = {};
-
-export default function SocialLinks({}: Props) {
+export default function SocialLinks() {
   return (
     <ul className="flex gap-8 items-center justify-center mb-5 md:mb-20 mx-auto text-sm">
       {socialLinks.map((link) => {

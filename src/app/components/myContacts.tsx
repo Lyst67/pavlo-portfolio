@@ -1,7 +1,8 @@
 import { Inter } from 'next/font/google';
-import Image from 'next/image';
-import React from 'react';
 import { toast } from 'sonner';
+import { GoMail } from 'react-icons/go';
+import { GoCopy } from 'react-icons/go';
+import { FiPhone } from 'react-icons/fi';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -10,18 +11,16 @@ function copy(text: string) {
   toast.info('Added to clipboard!');
 }
 
-type Props = {};
-
-export default function MyContacts({}: Props) {
+export default function MyContacts() {
   return (
     <>
       <div
         onClick={() => copy('p_listopad@ukr.net')}
         className="flex gap-2 items-center cursor-copy hover:scale-110 duration-300"
       >
-        <Image src={'/mail.svg'} alt="mail" width={16} height={16} />
+        <GoMail className="w-4 h-4" />
         <span>p_listopad@ukr.net</span>
-        <Image src={'/copy_button.svg'} alt="copy" width={24} height={24} />
+        <GoCopy className="w-5 h-5" />
         {/* <Link href={"mailto:p_listopad@ukr.net"} target="_top">
                 p_listopad@ukr.net
               </Link> */}
@@ -30,15 +29,9 @@ export default function MyContacts({}: Props) {
         onClick={() => copy('+380963147746')}
         className="flex gap-2 items-center cursor-copy hover:scale-110 duration-300"
       >
-        <Image className="stroke-inherit" src={'/phone.svg'} alt="" width={16} height={16} />
+        <FiPhone className="w-4 h-4" />
         <span className={inter.className}>+38(096)3147746</span>
-        <Image
-          className="stroke-inherit"
-          src={'/copy_button.svg'}
-          alt="copy"
-          width={24}
-          height={24}
-        />
+        <GoCopy className="w-5 h-5" />
         {/* <Link href={"tel:+380963147746"}>+38(096)3147746</Link> */}
       </div>
     </>

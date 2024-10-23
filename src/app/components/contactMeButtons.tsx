@@ -1,13 +1,10 @@
-import React from 'react';
-import Button from './button';
 import Link from 'next/link';
+import Button from './button';
+import LinkRoundButton from './linkRoundButton';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
-import LinkRoundButton from './linkRoundButton';
 
-type Props = {};
-
-export default function ContactMeButtons({}: Props) {
+export default function ContactMeButtons() {
   return (
     <div className="flex gap-4 items-center">
       <Button>

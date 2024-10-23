@@ -1,9 +1,7 @@
 import Link from 'next/link';
 import { HiMiniArrowDownTray } from 'react-icons/hi2';
 
-type ResumeButtonProps = {};
-
-export default function ResumeButton({}: ResumeButtonProps) {
+export default function ResumeButton() {
   return (
     <button className="w-fit flex items-center gap-3 h-8 sm:h-9 lg:h-10 px-6 mx-auto rounded-lg border border-solid border-transparent hover:border-salad focus:border-salad text-medium uppercase text-salad duration-500">
       <Link

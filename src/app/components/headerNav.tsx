@@ -1,12 +1,10 @@
 'use client';
-import React from 'react';
+
 import { usePathname } from 'next/navigation';
 import { NavItem } from './navItem';
 import { navLinks } from '@/lib/navLinks';
 
-type HeaderNavProps = {};
-
-export default function HeaderNav(props: HeaderNavProps) {
+export default function HeaderNav() {
   const currentPath = usePathname();
   return (
     <>
