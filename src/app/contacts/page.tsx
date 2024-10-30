@@ -38,7 +38,6 @@ export default function Contacts() {
               <ResumeButton />
             </div>
           </div>
-
           <div className="md:w-1/2">
             <MessageForm />
           </div>

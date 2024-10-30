@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import ContactMeButtons from './components/contactMeButtons';
-import { SiGooglemaps } from 'react-icons/si';
+import GoogleMapsLink from './components/googleMapsLink';
+import MoreAboutButton from './components/moreAboutButton';
 
 export default function Home() {
   return (
@@ -15,7 +15,6 @@ export default function Home() {
           sizes="100vw"
           className="mix-blend-overlay h-[70vh] md:h-[75vh]  w-full object-cover object-center object-no-repeat opacity-50"
         />
-
         <div className="absolute top-[50%] -translate-y-[50%] grid gap-y-7 md:w-2/3 lg:w-3/5 p-8 md:px-12 xl:px-20 xl:pt-20  font-semibold">
           <div>
             <p className="mb-3 mt-5 md:mt-10 lg:mt-5 text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tighter">
@@ -28,30 +27,11 @@ export default function Home() {
               </p>
             </div>
           </div>
-
           <p className="sm:w-4/5 text-sm md:text-base lg:text-lg font-semibold ">
             A Kyiv based Full-stack developer passionate about building accessible and user friendly
             websites.
           </p>
-          <div className="w-fit">
-            <Link
-              className="flex gap-2 items-center hover:text-salad duration-500"
-              href={'https://maps.app.goo.gl/hxBt8hcqaV8noxheA'}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SiGooglemaps className="w-5 h-5" />
-              <span>Brovary Kyiv area, Ukraine</span>
-              <Image
-                src="/lang/ua_flag.svg"
-                alt="ukraine flag"
-                width="0"
-                height="0"
-                sizes="100vw"
-                className="w-5 h-4"
-              />
-            </Link>
-          </div>
+          <GoogleMapsLink />
           <ContactMeButtons />
         </div>
       </div>
@@ -63,11 +43,7 @@ export default function Home() {
           have been creating web applications for only more than 1 year, I am rapidly gaining
           experience because I really like to learn new technologies.
         </p>
-        <button className="duration-300 transform hover:scale-110 focus:scale-110">
-          <Link href={'/about'} className="underline uppercase text-sm text-salad">
-            more about me
-          </Link>
-        </button>
+        <MoreAboutButton />
       </div>
     </>
   );
