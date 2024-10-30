@@ -9,7 +9,12 @@ type LinkToButtonProps = {
 export default function LinkToButton({ children, href }: LinkToButtonProps) {
   return (
     <div className="duration-300 transform hover:scale-110 text-salad text-sm uppercase">
-      <Link href={href} className="flex gap-2 items-center">
+      <Link
+        href={href}
+        className="flex gap-2 items-center"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <span>{children}</span>
         <GoArrowUpRight className="w-5 h-5" />
       </Link>
