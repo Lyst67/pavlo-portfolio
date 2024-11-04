@@ -11,18 +11,6 @@ export const projects = [
     site: 'https://dorosh-art-gallery.vercel.app/',
   },
   {
-    image: '/images/crm.webp',
-    name: 'CRM for vendors',
-    description:
-      'An example of the application that helps in optimizing the management of information about suppliers.',
-    stack: 'Next.js, React, Typescript, Tailwind CSS, React-query, Formik',
-    type: 'Individual project',
-    role: 'Front-end developer',
-    year: '2024',
-    site: 'https://crm-for-vendors.vercel.app/',
-    github: 'https://github.com/Lyst67/crm-for-vendors',
-  },
-  {
     image: '/images/gym.webp',
     name: 'Space Gym',
     description: 'A responsive React website presenting Fitness Classes with pleasant animations.',
@@ -60,16 +48,16 @@ export const projects = [
     github: 'https://github.com/Lyst67/phonebook-ts',
   },
   {
-    image: '/images/movie1.webp',
-    name: 'Best Movies',
+    image: '/images/crm.webp',
+    name: 'CRM for vendors',
     description:
-      'Introducing a convenient application on three pages with responsive design that will help you find and get information about the most popular movies of the week.',
-    stack: 'WebPack, HTML, CSS, React.js, React-Dom, React-Router-Dom, Axios, TMDB API...',
+      'An example of the application that helps in optimizing the management of information about suppliers.',
+    stack: 'Next.js, React, Typescript, Tailwind CSS, React-query, Formik',
     type: 'Individual project',
     role: 'Front-end developer',
-    year: '2023',
-    site: 'https://lyst67.github.io/best-movies-search/movies/157336/cast',
-    github: 'https://github.com/Lyst67/best-movies-search',
+    year: '2024',
+    site: 'https://crm-for-vendors.vercel.app/',
+    github: 'https://github.com/Lyst67/crm-for-vendors',
   },
 ];
 
@@ -85,6 +73,18 @@ export const otherProjects = [
     year: '2024',
     site: 'https://lyst67.github.io/rent-cars-redux/',
     github: 'https://github.com/Lyst67/rent-cars-redux',
+  },
+  {
+    image: '/images/movie1.webp',
+    name: 'Best Movies',
+    description:
+      'Introducing a convenient application on three pages with responsive design that will help you find and get information about the most popular movies of the week.',
+    stack: 'WebPack, HTML, CSS, React.js, React-Dom, React-Router-Dom, Axios, TMDB API...',
+    type: 'Individual project',
+    role: 'Front-end developer',
+    year: '2023',
+    site: 'https://lyst67.github.io/best-movies-search/movies/157336/cast',
+    github: 'https://github.com/Lyst67/best-movies-search',
   },
   {
     image: '/images/tasty.webp',
