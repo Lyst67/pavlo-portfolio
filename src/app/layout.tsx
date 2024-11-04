@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { Inter, Raleway } from 'next/font/google';
+import { Suspense } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 import { Header } from './components/header';
-import { Suspense } from 'react';
 import Footer from './components/footer';
 import Loading from './loading';
 
@@ -27,6 +28,7 @@ export default function RootLayout({
           <section className="bg-base-bg">{children}</section>
         </Suspense>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
