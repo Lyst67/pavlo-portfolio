@@ -46,12 +46,11 @@ export default function About() {
               I am a full-stack developer from Kyiv, looking for some interesting opportunities I
               have a background in the field of design and individual orders in the field of
               fashion. Able to work in contact with the client to fulfill the order as accurately as
-              possible. I like to focus on availability during development. Passionate and
-              interested in solutions to technical problems. I am currently exploring Next.js, SASS,
-              Docker, etc. <br /> While I am not programming, I enjoy learning Spanish and riding a
-              handbike. Also, I am developing technical devices for driving cars for people with
-              disabilities. But my biggest passion is traveling. I also study more for improving
-              skills.
+              possible. Passionate and interested in solutions to technical problems. I am currently
+              exploring Next.js, SASS, React native, etc. <br /> While I am not programming, I enjoy
+              learning Spanish and riding a handbike. Also, I am developing technical devices for
+              driving cars for people with disabilities. But my biggest passion is traveling. I also
+              study more for improving skills.
             </p>
             <ContactMeButtons />
           </div>
