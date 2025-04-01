@@ -44,7 +44,7 @@ export const Header = () => {
             : ''
       }
     >
-      <div className="flex h-11 md:h-16 px-8 lg:px-12 xl:px-20 items-center">
+      <div className="flex h-11 xl:h-16 md:h-16 px-8 lg:px-12 xl:px-20 items-center">
         <div>
           <Link href={'/'} className="flex gap-1 items-center">
             <Image

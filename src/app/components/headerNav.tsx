@@ -6,6 +6,8 @@ import { navLinks } from '@/lib/navLinks';
 
 export default function HeaderNav() {
   const currentPath = usePathname();
+ 
+ 
   return (
     <>
       <nav className="hidden md:flex items-center mx-auto">
@@ -14,8 +16,8 @@ export default function HeaderNav() {
             const isActive =
               currentPath.includes(link.name.toLowerCase().replace('//', '').trim()) ||
               currentPath === link.href;
-
-            return <NavItem key={link.name} link={link} isActive={isActive} />;
+              const workLink = link.href === "/work"
+            return <NavItem key={link.name} link={link} isActive={isActive} workLink={workLink} />;
           })}
         </ul>
       </nav>

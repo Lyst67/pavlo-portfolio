@@ -37,9 +37,9 @@ export default function MobileMenu({ closeMenu, isVisible }: MobileMenuProps) {
           {navLinks.map((link) => {
             const isActive =
               currentPath.includes(link.name.toLowerCase()) || currentPath === link.href;
-
+              const workLink = link.href === "/work"
             return (
-              <NavItem closeMenu={closeMenu} key={link.name} link={link} isActive={isActive} />
+              <NavItem closeMenu={closeMenu} key={link.name} link={link} isActive={isActive} workLink={workLink} />
             );
           })}
         </ul>

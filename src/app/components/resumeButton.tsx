@@ -10,7 +10,7 @@ export default function ResumeButton() {
         target="_blank"
         rel="noopener noreferrer"
         href={
-          'https://drive.google.com/file/d/1h1_XpmAT_mHr3OqFhTSZuvA2zE_x5Eyf/view?usp=drive_link'
+          'https://drive.google.com/file/d/1ezGt_A6R-CYbQv0EiKlIqSbkX9WyfVe_/view?usp=drive_link'
         }
       >
         <span>resume</span>
