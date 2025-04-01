@@ -6,16 +6,16 @@ import MoreAboutButton from './components/moreAboutButton';
 export default function Home() {
   return (
     <>
-      <div className="relative h-[70vh] md:h-[75vh] lg:h-[78vh] bg-gradient-to-br from-base-bg via-gray-700 to-base-bg">
+      <div className="relative h-[70vh] md:h-[75vh] lg:h-[78vh] xl:h-[80vh] bg-gradient-to-br from-base-bg via-gray-700 to-base-bg">
         <Image
           src={'/images/black_c.webp'}
           alt="spain cost"
           width={0}
           height={0}
           sizes="100vw"
-          className="mix-blend-overlay h-[70vh] md:h-[75vh] lg:h-[78vh] w-full object-cover object-center object-no-repeat opacity-50"
+          className="mix-blend-overlay h-[70vh] md:h-[75vh] lg:h-[78vh] xl:h-[80vh] w-full object-cover object-center object-no-repeat opacity-50"
         />
-        <div className="absolute top-11 xl:top-16 left-0 grid gap-y-6 xl:gap-y-7 md:w-2/3 lg:w-3/5 p-8 md:px-12 xl:px-20 xl:pt-6  font-semibold">
+        <div className="absolute top-11 xl:top-16 left-0 grid gap-y-6 2xl:gap-y-7 md:w-2/3 lg:w-3/5 p-8 md:px-12 xl:px-20 xl:pt-4 2xl:pt-6  font-semibold">
           <div>
             <div>
               <p className="mb-3 text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl tracking-tighter">
