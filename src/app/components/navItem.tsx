@@ -16,7 +16,7 @@ export const NavItem = ({ link, isActive, workLink, closeMenu }: NavItemProps) =
       <Link
         onClick={closeMenu}
         href={link.href}
-        className={isActive ? 'text-salad underline' : !isActive && workLink ? 'text-inherit animate-pulse' : 'text-inherit'}
+        className={isActive ? 'text-salad underline' : !isActive && workLink ? 'text-text animate-pulse' : 'text-inherit'}
       >
         {link.name}
       </Link>
