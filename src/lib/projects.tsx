@@ -48,21 +48,6 @@ export const projects = [
     github: 'https://github.com/Lyst67/phonebook-ts',
   },
   {
-    image: '/images/crm.webp',
-    name: 'CRM for vendors',
-    description:
-      'An example of the application that helps in optimizing the management of information about suppliers.',
-    stack: 'Next.js, React, Typescript, Tailwind CSS, React-query, Formik',
-    type: 'Individual project',
-    role: 'Front-end developer',
-    year: '2024',
-    site: 'https://crm-for-vendors.vercel.app/',
-    github: 'https://github.com/Lyst67/crm-for-vendors',
-  },
-];
-
-export const otherProjects = [
-  {
     image: '/images/rental.webp',
     name: 'Rental Cars',
     description:
@@ -73,6 +58,21 @@ export const otherProjects = [
     year: '2024',
     site: 'https://lyst67.github.io/rent-cars-redux/',
     github: 'https://github.com/Lyst67/rent-cars-redux',
+  },
+];
+
+export const otherProjects = [
+  {
+    image: '/images/crm.webp',
+    name: 'CRM for vendors',
+    description:
+      'An example of the application that helps in optimizing the management of information about suppliers.',
+    stack: 'Next.js, React, Typescript, Tailwind CSS, React-query, Formik',
+    type: 'Individual project',
+    role: 'Front-end developer',
+    year: '2024',
+    site: 'https://crm-for-vendors.vercel.app/',
+    github: 'https://github.com/Lyst67/crm-for-vendors',
   },
   {
     image: '/images/movie1.webp',
