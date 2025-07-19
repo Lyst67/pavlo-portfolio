@@ -1,5 +1,16 @@
 export const projects = [
   {
+    image: '/images/growForce.webp',
+    name: 'Grow Force',
+    description: `An AI-based low-code application that can extract all the necessary data for the company you choose. It works completely automatically. Just log in and enter the company name and website.`,
+    stack:
+      'WEWeb, Xano, Firecrawl',
+    type: 'Individual project',
+    role: 'Low-code developer, FullStack developer, web designer',
+    year: '2025',
+    site: 'https://855097aa-e62a-4c05-824e-36ee0b2f6e62.weweb-preview.io/',
+  },
+  {
     image: '/images/gallery.webp',
     name: 'Dorosh-Art-Gallery',
     description: `The website is responsive, has 8 main pages, include 7 public pages (Home, Catalog, Events, About, Services, Contacts, Favorites) and a private Admin page with which the owner of the Gallary can add, delete, and edit pictures catalog and info about it. The site has bilingual interface and a dark/light theme switcher`,

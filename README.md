@@ -1,6 +1,6 @@
 The "Pavlo-Portfolio" project was designed and created by developer Pavlo Lystopad.
 It has four pages, including descriptions of my completed projects, and some information about me.
-Used technologies are Next.js, React, TypeScript, Tailwind/CSS, Formik, Yup, Email.js.
+Used technologies are Next.js, React, TypeScript, Tailwind/CSS, Framer-motion, Formik, Yup, Email.js.
 
 You can contact me for any questions about this site, my portfolio, and creating your new wonderful website project.
 
